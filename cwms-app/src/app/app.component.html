@@ -1,0 +1,26 @@
+<!-- <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+    <li class = "nav-item">
+        <a routerLink="/cwtasks" routerLinkActive="active" class="nav-link">Tasks Lists</a>
+    </li>
+    <li class = "nav-item">
+        <a routerLink="/create-cwtask" routerLinkActive="active" class="nav-link">Create Task</a>
+    </li>
+  </ul>
+</nav> -->
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class = "nav-item">
+        <a class="nav-link" routerLink="/cwtasks"  >Tasks Lists</a>
+      </li>
+      <li class = "nav-item">
+        <a  class="nav-link" routerLink="/create-cwtask"  >Create Task</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<h1 class="text-center">{{title}}</h1>
+<div class="container">
+ <router-outlet></router-outlet>
+</div>

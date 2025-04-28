@@ -1,0 +1,24 @@
+<h2>Case Worker Tasks List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Descripton</th>
+            <th>Status</th>
+            <th>Due Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let cwtask of cwtasks">
+            <td>{{cwtask.strTitle}}</td>
+            <td >{{cwtask.strDescription}}</td>
+            <td>{{cwtask.strStatus}}</td>
+            <td>{{cwtask.dueDateTime | date: 'short'}}</td>
+            <td><button (click)="detailsCwTask(cwtask.id)" class="btn btn-info">Details</button>
+            <td><button (click)="updateCwTask(cwtask.id)" class="btn btn-primary">Update</button>
+            <td><button (click)="deleteCwTask(cwtask.id)" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
